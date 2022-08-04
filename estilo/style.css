@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /*font-family: 'Passion One', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/*font-family: 'Sriracha', cursive;*/
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /*fonte normal*/
+    --fonte2: 'Passion One', cursive; /*fonte titulos*/
+    --fonte3: 'Sriracha', cursive; /*fonte poema*/
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body { /*configurações para html e body*/
+    min-height: 100vh; /* altura minimo do corpo sera 100% tela */
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{ /*edição do h1 dentro de header*/
+    padding-top: 50px;
+    /*text-transform:uppercase   // deixa as lestra maiusculas*/
+    font-variant: small-caps; /*deixa as letra maiusculas*/
+    font-family: var(--fonte2);
+    font-size: 7vw; /*o tamanho da fonte vao ocupar 10% da largura da tela*/
+
+}
+
+header > p { /*edição do p dentro de header*/
+    padding-bottom: 50px;
+
+}
+
+header a, footer a{  /*edição do a dentro de header e footer*/
+    color: white;
+    text-decoration: none; /* sem alteração com as tag de link*/
+    font-weight: bolder; /* deixar negrito*/
+}
+
+header a:hover, footer a:hover{ /*edição do a dentro de header e footer*/
+    text-decoration: underline; /*efeito ao passar em cima da tag*/
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em; /* espaçamento entre linhas */
+    font-family: var(--fonte3);
+    font-size: 3vw; /*foi usado 3.5 vw*/
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+} 
+
+section.imagem {
+    background-color: rgb(51, 50, 50);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.392);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block; /*a caixa pode si adaptar ao conteudo*/
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.222);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg'); /*imagem de fundo*/
+    background-position: right center; /*posição a direita centralizado */
+    
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center; /*alimento de texto*/
+    padding: 10px;
+}
