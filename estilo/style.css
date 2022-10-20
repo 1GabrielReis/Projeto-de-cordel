@@ -35,7 +35,7 @@ header > h1{ /*edição do h1 dentro de header*/
     /*text-transform:uppercase   // deixa as lestra maiusculas*/
     font-variant: small-caps; /*deixa as letra maiusculas*/
     font-family: var(--fonte2);
-    font-size: 7vw; /*o tamanho da fonte vao ocupar 10% da largura da tela*/
+    font-size: 7vw; /*o tamanho da fonte vao ocupar 7% da largura da tela*/
 
 }
 
